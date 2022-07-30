@@ -1,10 +1,10 @@
 
 body{
-    background-color: #D3D3D3	;
+    // background-color: #D3D3D3	;
 }
 .perexod{
     text-decoration: none;
-    color: #FFFF00;
+    color: #34ff06;
     font-size: 25px;
     margin-top: 100px;
     margin-left: 100px;
@@ -42,5 +42,49 @@ body{
     }
     100%{
         transform: translateY(-500px) translateX(450px);
+    }
+}
+.scene2{
+    margin: 200px auto;
+    padding-left: 300px;
+    width: 800px;
+    height: 200px;
+
+
+    &__loading{
+        width: 200px;
+        height: 200px;
+        border: 20px solid #F3F3F3;
+        border-bottom-color: #3598DB;
+        border-radius: 50%;
+        background-color: white;
+        animation: loading 3s linear infinite;
+    }
+
+}
+@keyframes loading {
+    12%{
+        transform: rotateZ(45deg) ;
+    }
+    24%{
+        transform: rotateZ(90deg) ;        
+    }
+    36%{
+        transform: rotateZ(135deg) ;
+    }
+    48%{
+        transform: rotateZ(180deg) ;    
+    }
+    60%{
+        transform: rotateZ(225deg) ;    
+    }
+    70%{
+        transform: rotateZ(270deg) ;    
+    }
+    86%{
+        transform: rotateZ(315deg) ;    
+    }
+    100%{
+        transform: rotateZ(360deg) ;   
     }
 }
